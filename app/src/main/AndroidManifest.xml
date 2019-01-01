@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.gxd.sophix"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 外部存储读权限，调试工具加载本地补丁需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.gxd.sophix.SophixStubApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="25485224"/>
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="0e1fbb24c5cbbe8c6724a54c4afe1455"/>
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCnI1tk0iVWlSiYBd6p3eUspB+AywsajgTVwxAFbWGLnH13YX8QeqignHCVqmMAl9mxFWVxrIwP0iZDB41XHT1P0nIXT1vsDFx1eHMg15IaTCQ1lHEac74XY44BF6Z0tjSxyTZL+8/xQf5+LKqobXd37Cb0yWlGBL/yQu/cph/0uDVkcmdNXA7DO6RnChpnidoh8PHOLS6eVjiW2urNHDZSExpu9hARXIexvCl3B1201WkPWskTDWX1eBBsnmKd95OQ1L2sUqbFgPblf6Ob9Okib3cIOSYd/m9U6iygUXo1B/+bcElCyWicOf4nOQRjRoESn0RvQkNUTLFngWBCJy3ZAgMBAAECggEAXlPTEcyULBBUb6/oYaAM5iveZ7awFpWOXwIOubFouv1fxg9tQeSn5LVFyQH3i+8negykSwphpdAprezGNSMYZkNUBpnQPCEh0V5gQ2nGWDcevGqBhrdJ0jNqgm1RkU7/4FK55RpB2lwvgBA/ZH0bTsAloENHua+WkOh8LOBI6rheDAGAcv4sRjj3EXf4q80HJUzU7SNKRX+fctRfrFERFttVsqm3DT/bL/cmqf3ZcpZyxJDoLrRliPNonHvhmabPCfOetuMLG05Lfbq6jo8bcZ8ch8M4jXoRSB0MU7x33N7P81KIJe+QdUn4gO0XEqzB9SqoDXX2fw3xVDukl+tQgQKBgQDZZYU8QtzLPIUnlBB/QXQuVETZA/1NY+kXgIDU+mnNLacJ+J1Yyz+bHm0OPlhXKIihHqdpeQGd9qIJHIKSfA15RLzQV/SmDGcBFabxY2ZHRzyMDxaTAkVhcmdDykn4UCmfYuMB0VCSlAvqNYvVY83e5Q3xmq77GNI5BXc605K2aQKBgQDE0SwpwdNXra9wjLA9H7EAHDAurOFqoeFk+428XeFSIRqW2OWUyr2UWabdXUQyyxA+knR0A/djp3tpDNDccuQ1N03YwXvlbD5zcrYUnOQxp/aVWZtH4577sbo3CPN8mMqaUVrKntDWm4FA0qMV2O1pv64YForoWcp27aL0/hEt8QKBgHoC/mo55I20Y884zKF/bONrrFBYatv6jSIBn0zpVmQvkSaJgFYLjKFUzERIPXB9cWFsQO1zWrL7bynJ9IaeVTmQmKAeHVLsdwsmydGExiyPEK5S8YqEpcfxW3+ykx1ocFPiPiIRBjWeHanPb7HOGAdXayIEfNy0q5gRNz+u6xKxAoGAMhC/ejPK7g/JhAjVwAaywMNq4kSp5rUdH9H5oQQEkB7Jo7uy0uGrzfPsRX03HvCWxkP9CZIEuT3eX7+Z1aoIMR1LWSsGuDqLvFReyumKBrOiPyWXIXdedsokA2HshjJbv1uYi9hQaXcPLw0l3SXcZr0SrR/239oPbadPf6CtgBECgYAWR5VC7TOseMI6ZIIFREBkMQK5fiZkDXYq9YIZK/BHo2Ycic1SIhReFUSjqrn1ewD7L3IO/q5M5UZd4JP1tmpPrVpVWrdZYVaEC+l4R5HymJTS5dsohYDe0fuiGyWsGLAoU7xs9+gTnhvZrsMIx0bwCBC+giwgDT7jLshGxjXOSg=="/>
+    </application>
+
+</manifest>
